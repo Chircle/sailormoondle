@@ -1,0 +1,38 @@
+{
+  "title": "セーラームーンドル",
+  "subtitle": "今日のキャラクターを当てよう！",
+  "howToPlay": "遊び方",
+  "howToPlayText": "8回以内にセーラームーンのキャラクターを当ててください。答えるたびにタイルの色が変わり、どれだけ近いかがわかります。",
+  "searchPlaceholder": "キャラクター名を入力...",
+  "guess": "回答",
+  "correct": "正解",
+  "wrong": "不正解",
+  "partial": "惜しい",
+  "youWon": "正解です！",
+  "youLost": "また明日挑戦してね！",
+  "theAnswerWas": "正解は",
+  "share": "シェア",
+  "copied": "コピーしました！",
+  "nextCharacter": "次のキャラクターまで",
+  "guessCount": "{count} / 8",
+  "attributes": {
+    "name": "キャラクター",
+    "affiliation": "所属",
+    "role": "役割",
+    "element": "属性",
+    "hairColor": "髪の色",
+    "eyeColor": "目の色",
+    "firstAppearance": "初登場",
+    "gender": "性別"
+  },
+  "seasons": {
+    "Classic": "クラシック",
+    "R": "R",
+    "S": "S",
+    "SuperS": "SuperS",
+    "Stars": "スターズ"
+  },
+  "alreadyGuessed": "すでに回答済みです！",
+  "noResults": "キャラクターが見つかりません",
+  "playAgainTomorrow": "明日また新しいキャラクターで挑戦してね！"
+}

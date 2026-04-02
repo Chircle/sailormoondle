@@ -1,0 +1,38 @@
+{
+  "title": "Sailormoondle",
+  "subtitle": "Guess today's character!",
+  "howToPlay": "How to play",
+  "howToPlayText": "Guess the Sailor Moon character in 8 tries. After each guess, the color of the tiles will change to show how close you are.",
+  "searchPlaceholder": "Type a character name...",
+  "guess": "Guess",
+  "correct": "Correct!",
+  "wrong": "Wrong",
+  "partial": "Partial",
+  "youWon": "You got it!",
+  "youLost": "Better luck tomorrow!",
+  "theAnswerWas": "The answer was",
+  "share": "Share",
+  "copied": "Copied!",
+  "nextCharacter": "Next character in",
+  "guessCount": "{count} / 8",
+  "attributes": {
+    "name": "Character",
+    "affiliation": "Affiliation",
+    "role": "Role",
+    "element": "Element",
+    "hairColor": "Hair",
+    "eyeColor": "Eyes",
+    "firstAppearance": "First seen",
+    "gender": "Gender"
+  },
+  "seasons": {
+    "Classic": "Classic",
+    "R": "R",
+    "S": "S",
+    "SuperS": "SuperS",
+    "Stars": "Stars"
+  },
+  "alreadyGuessed": "Already guessed!",
+  "noResults": "No character found",
+  "playAgainTomorrow": "Come back tomorrow for a new character!"
+}

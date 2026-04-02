@@ -1,0 +1,38 @@
+{
+  "title": "Sailormoondle",
+  "subtitle": "Errate die heutige Figur!",
+  "howToPlay": "Spielanleitung",
+  "howToPlayText": "Errate die Sailor-Moon-Figur in 8 Versuchen. Nach jedem Tipp ändert sich die Farbe der Felder und zeigt dir, wie nah du dran bist.",
+  "searchPlaceholder": "Figurenname eingeben...",
+  "guess": "Raten",
+  "correct": "Richtig",
+  "wrong": "Falsch",
+  "partial": "Teilweise",
+  "youWon": "Geschafft!",
+  "youLost": "Vielleicht morgen!",
+  "theAnswerWas": "Die Antwort war",
+  "share": "Teilen",
+  "copied": "Kopiert!",
+  "nextCharacter": "Nächste Figur in",
+  "guessCount": "{count} / 8",
+  "attributes": {
+    "name": "Figur",
+    "affiliation": "Zugehörigkeit",
+    "role": "Rolle",
+    "element": "Element",
+    "hairColor": "Haare",
+    "eyeColor": "Augen",
+    "firstAppearance": "Erstauftritt",
+    "gender": "Geschlecht"
+  },
+  "seasons": {
+    "Classic": "Klassik",
+    "R": "R",
+    "S": "S",
+    "SuperS": "SuperS",
+    "Stars": "Stars"
+  },
+  "alreadyGuessed": "Bereits geraten!",
+  "noResults": "Keine Figur gefunden",
+  "playAgainTomorrow": "Komm morgen für eine neue Figur wieder!"
+}

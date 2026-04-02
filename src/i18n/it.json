@@ -1,0 +1,38 @@
+{
+  "title": "Sailormoondle",
+  "subtitle": "Indovina il personaggio di oggi!",
+  "howToPlay": "Come si gioca",
+  "howToPlayText": "Indovina il personaggio di Sailor Moon in 8 tentativi. Dopo ogni tentativo, il colore delle tessere cambierà per mostrare quanto sei vicino.",
+  "searchPlaceholder": "Inserisci il nome di un personaggio...",
+  "guess": "Indovina",
+  "correct": "Corretto",
+  "wrong": "Sbagliato",
+  "partial": "Parziale",
+  "youWon": "Hai indovinato!",
+  "youLost": "Buona fortuna domani!",
+  "theAnswerWas": "La risposta era",
+  "share": "Condividi",
+  "copied": "Copiato!",
+  "nextCharacter": "Prossimo personaggio tra",
+  "guessCount": "{count} / 8",
+  "attributes": {
+    "name": "Personaggio",
+    "affiliation": "Affiliazione",
+    "role": "Ruolo",
+    "element": "Elemento",
+    "hairColor": "Capelli",
+    "eyeColor": "Occhi",
+    "firstAppearance": "Prima apparizione",
+    "gender": "Genere"
+  },
+  "seasons": {
+    "Classic": "Classico",
+    "R": "R",
+    "S": "S",
+    "SuperS": "SuperS",
+    "Stars": "Stelle"
+  },
+  "alreadyGuessed": "Già indovinato!",
+  "noResults": "Nessun personaggio trovato",
+  "playAgainTomorrow": "Torna domani per un nuovo personaggio!"
+}

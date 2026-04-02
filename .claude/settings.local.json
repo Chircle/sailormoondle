@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(node /tmp/check_keys.js)",
+      "Bash(node /tmp/test_daily.mjs)",
+      "Bash(node /tmp/test_storage.mjs)"
+    ]
+  }
+}

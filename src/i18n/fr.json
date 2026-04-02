@@ -1,0 +1,38 @@
+{
+  "title": "Sailormoondle",
+  "subtitle": "Devinez le personnage du jour !",
+  "howToPlay": "Comment jouer",
+  "howToPlayText": "Devinez le personnage de Sailor Moon en 8 essais. Après chaque tentative, la couleur des tuiles change pour indiquer votre proximité.",
+  "searchPlaceholder": "Tapez un nom de personnage...",
+  "guess": "Deviner",
+  "correct": "Correct",
+  "wrong": "Faux",
+  "partial": "Partiel",
+  "youWon": "Bravo !",
+  "youLost": "Bonne chance demain !",
+  "theAnswerWas": "La réponse était",
+  "share": "Partager",
+  "copied": "Copié !",
+  "nextCharacter": "Prochain personnage dans",
+  "guessCount": "{count} / 8",
+  "attributes": {
+    "name": "Personnage",
+    "affiliation": "Affiliation",
+    "role": "Rôle",
+    "element": "Élément",
+    "hairColor": "Cheveux",
+    "eyeColor": "Yeux",
+    "firstAppearance": "Première apparition",
+    "gender": "Genre"
+  },
+  "seasons": {
+    "Classic": "Classique",
+    "R": "R",
+    "S": "S",
+    "SuperS": "SuperS",
+    "Stars": "Étoiles"
+  },
+  "alreadyGuessed": "Déjà deviné !",
+  "noResults": "Aucun personnage trouvé",
+  "playAgainTomorrow": "Revenez demain pour un nouveau personnage !"
+}
