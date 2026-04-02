@@ -32,7 +32,7 @@
           <CharacterAvatar
             :id="char.id"
             :name="char.names[locale]"
-            :src="`/images/characters/${char.id}.png`"
+            :src="`${baseUrl}images/characters/${char.id}.png`"
             style="width:28px;height:28px;"
           />
           <span class="char-name">{{ char.names[locale] }}</span>
@@ -53,6 +53,8 @@ import { useI18n } from 'vue-i18n'
 import { characters } from '../data/characters'
 import type { Character, Locale } from '../types/character'
 import CharacterAvatar from './CharacterAvatar.vue'
+
+const baseUrl = import.meta.env.BASE_URL
 
 const props = defineProps<{
   locale: Locale

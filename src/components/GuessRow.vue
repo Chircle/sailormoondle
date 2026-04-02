@@ -7,7 +7,7 @@
         <CharacterAvatar
           :id="guess.character.id"
           :name="guess.character.names[locale]"
-          :src="`/images/characters/${guess.character.id}.png`"
+          :src="`${baseUrl}images/characters/${guess.character.id}.png`"
         />
         <span class="character-name">{{ guess.character.names[locale] }}</span>
       </div>
@@ -28,6 +28,8 @@
 import { useI18n } from 'vue-i18n'
 import type { GuessResult, Locale } from '../types/character'
 import HintCell from './HintCell.vue'
+
+const baseUrl = import.meta.env.BASE_URL
 import CharacterAvatar from './CharacterAvatar.vue'
 
 defineProps<{

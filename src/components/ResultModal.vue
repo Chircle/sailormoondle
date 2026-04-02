@@ -25,7 +25,7 @@
           <CharacterAvatar
             :id="target.id"
             :name="target.names[locale]"
-            :src="`/images/characters/${target.id}.png`"
+            :src="`${baseUrl}images/characters/${target.id}.png`"
             :large="true"
           />
           <p class="answer-name">{{ target.names[locale] }}</p>
@@ -54,6 +54,8 @@ import { useI18n } from 'vue-i18n'
 import type { Character, Locale } from '../types/character'
 import CountdownTimer from './CountdownTimer.vue'
 import CharacterAvatar from './CharacterAvatar.vue'
+
+const baseUrl = import.meta.env.BASE_URL
 
 const props = defineProps<{
   status: 'won' | 'lost'
