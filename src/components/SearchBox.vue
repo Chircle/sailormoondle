@@ -32,7 +32,8 @@
           <CharacterAvatar
             :id="char.id"
             :name="char.names[locale]"
-            :src="`${baseUrl}images/characters/${char.id}.png`"
+            :src="`${baseUrl}images/characters-thumb/${char.id}.png`"
+            :full-src="`${baseUrl}images/characters/${char.id}.png`"
             style="width:28px;height:28px;"
           />
           <span class="char-name">{{ char.names[locale] }}</span>

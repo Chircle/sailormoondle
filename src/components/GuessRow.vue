@@ -7,7 +7,8 @@
         <CharacterAvatar
           :id="guess.character.id"
           :name="guess.character.names[locale]"
-          :src="`${baseUrl}images/characters/${guess.character.id}.png`"
+          :src="`${baseUrl}images/characters-thumb/${guess.character.id}.png`"
+          :full-src="`${baseUrl}images/characters/${guess.character.id}.png`"
         />
         <span class="character-name">{{ guess.character.names[locale] }}</span>
       </div>
@@ -68,9 +69,10 @@ const { t } = useI18n()
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
   min-width: 0;
+  line-height: 1.2;
 }
 </style>

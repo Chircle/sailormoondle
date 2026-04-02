@@ -8,8 +8,8 @@
   >
     <div class="avatar" :style="avatarStyle">
       <img
-        v-if="src && imgOk"
-        :src="src"
+        v-if="displaySrc && imgOk"
+        :src="displaySrc"
         :alt="name"
         class="avatar-img"
         @error="imgOk = false"
@@ -25,11 +25,11 @@
   <Teleport to="body">
     <Transition name="zoom-preview">
       <div
-        v-if="showPreview && imgOk && src && !large"
+        v-if="showPreview && imgOk && (fullSrc || src) && !large"
         class="zoom-preview"
         :style="previewStyle"
       >
-        <img :src="src" :alt="name" class="zoom-img" />
+        <img :src="fullSrc || src" :alt="name" class="zoom-img" />
         <span class="zoom-name">{{ name }}</span>
       </div>
     </Transition>
@@ -46,8 +46,11 @@ const props = defineProps<{
   id: string
   name: string
   src?: string
+  fullSrc?: string
   large?: boolean
 }>()
+
+const displaySrc = computed(() => props.src)
 
 const imgOk = ref(true)
 const showPreview = ref(false)
