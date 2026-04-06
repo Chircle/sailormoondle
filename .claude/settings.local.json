@@ -4,7 +4,8 @@
       "Bash(npm run:*)",
       "Bash(node /tmp/check_keys.js)",
       "Bash(node /tmp/test_daily.mjs)",
-      "Bash(node /tmp/test_storage.mjs)"
+      "Bash(node /tmp/test_storage.mjs)",
+      "Bash(python3 -c \"from PIL import Image; img = Image.open\\('/c/Users/simert/Documents/myStuff/____Spassprojekte/sailormoondle/public/images/characters/sailor-moon.png'\\); print\\(img.size, img.mode\\)\")"
     ]
   }
 }
