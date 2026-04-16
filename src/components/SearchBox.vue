@@ -49,7 +49,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { characters } from '../data/characters'
 import type { Character, Locale } from '../types/character'
@@ -81,8 +81,13 @@ const filtered = computed(() => {
   )
 })
 
+watch(query, (val) => {
+  open.value = val.trim().length > 0
+  activeIndex.value = 0
+})
+
 function onInput() {
-  open.value = true
+  open.value = query.value.trim().length > 0
   activeIndex.value = 0
 }
 

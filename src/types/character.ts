@@ -7,6 +7,7 @@ export type Affiliation =
   | 'Death Busters'
   | 'Dead Moon'
   | 'Shadow Galactica'
+  | 'Makaiju'
   | 'Earth/Ally'
   | 'Civilian'
 
