@@ -1,4 +1,5 @@
 import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import type { Character, GuessResult, HintResult, Season } from '../types/character'
 import { getDailyCharacter, getPuzzleNumber } from './useDailyCharacter'
 import { loadState, saveState } from './useStorage'
@@ -73,6 +74,7 @@ function buildGuessResult(guessed: Character, target: Character): GuessResult {
 }
 
 export function useGame() {
+  const { t } = useI18n()
   const target = getDailyCharacter()
   const puzzleNumber = getPuzzleNumber()
 
@@ -113,7 +115,9 @@ export function useGame() {
           .join(''),
       )
       .join('\n')
-    return `${header}\n\n${grid}`
+    const url = window.location.origin + window.location.pathname
+    const footer = `${t('playSailormoondle')}: ${url}`
+    return `${header}\n\n${grid}\n\n${footer}`
   }
 
   return {

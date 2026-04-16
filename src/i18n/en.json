@@ -1,5 +1,6 @@
 {
   "title": "Sailormoondle",
+  "playSailormoondle": "Play Sailormoondle",
   "subtitle": "Guess today's character!",
   "howToPlay": "How to play",
   "howToPlayText": "Guess the Sailor Moon character in 8 tries. After each guess, the color of the tiles will change to show how close you are.",
