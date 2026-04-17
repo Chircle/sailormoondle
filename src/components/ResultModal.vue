@@ -93,6 +93,8 @@ async function share() {
   justify-content: center;
   z-index: 200;
   padding: 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal {
@@ -103,6 +105,18 @@ async function share() {
   position: relative;
   animation: pop-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .overlay {
+    align-items: flex-start;
+    padding: 48px 12px 16px;
+  }
+
+  .modal {
+    max-width: none;
+    padding: 28px 16px 24px;
+  }
 }
 
 /* Rainbow shimmer top border */

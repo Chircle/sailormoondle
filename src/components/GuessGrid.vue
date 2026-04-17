@@ -86,5 +86,9 @@ const attrKeys = [
 .col-header.name-col {
   text-align: left;
   padding-left: 48px; /* align with name text, after avatar */
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background: var(--color-bg, #FFF6FB);
 }
 </style>

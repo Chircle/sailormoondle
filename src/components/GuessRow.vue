@@ -53,13 +53,18 @@ const { t } = useI18n()
   align-items: stretch;
 }
 
-/* Col 1: avatar + name */
+/* Col 1: avatar + name — sticky so it stays visible on horizontal scroll */
 .name-cell {
   display: flex;
   align-items: center;
   gap: 14px;
   padding: 0 6px;
   min-width: 0;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: var(--color-surface, rgba(255, 255, 255, 0.72));
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 }
 
 .character-name {
