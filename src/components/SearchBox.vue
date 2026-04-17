@@ -3,14 +3,16 @@
     <div class="input-wrap" :class="{ focused, disabled }">
       <span class="search-icon" aria-hidden="true">☽</span>
       <input
-        v-model="query"
+        :value="query"
         type="text"
+        inputmode="search"
         :placeholder="t('searchPlaceholder')"
         :disabled="disabled"
         autocomplete="off"
         @focus="focused = true"
         @blur="onBlur"
         @input="onInput"
+        @compositionend="onInput"
         @keydown.enter="selectFirst"
         @keydown.escape="close"
         @keydown.arrow-down.prevent="moveDown"
@@ -86,7 +88,9 @@ watch(query, (val) => {
   activeIndex.value = 0
 })
 
-function onInput() {
+function onInput(e: Event) {
+  const target = e.target as HTMLInputElement
+  query.value = target.value
   open.value = query.value.trim().length > 0
   activeIndex.value = 0
 }
@@ -105,7 +109,7 @@ function selectFirst() {
 function close() { open.value = false }
 function clearQuery() { query.value = ''; open.value = false }
 // Delay close so a click on a dropdown item fires before blur hides the list
-function onBlur() { setTimeout(() => { focused.value = false; open.value = false }, 150) }
+function onBlur() { setTimeout(() => { focused.value = false; open.value = false }, 200) }
 function moveDown() { if (activeIndex.value < filtered.value.length - 1) activeIndex.value++ }
 function moveUp() { if (activeIndex.value > 0) activeIndex.value-- }
 </script>

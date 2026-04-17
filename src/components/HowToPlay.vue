@@ -81,7 +81,19 @@ const attrKeys = ['affiliation', 'role', 'element', 'hairColor', 'eyeColor', 'fi
   padding: 32px 24px 28px;
   position: relative;
   animation: pop-in 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(100dvh - 32px);
+}
+
+@media (max-width: 480px) {
+  .modal {
+    max-width: none;
+    width: 100%;
+    max-height: calc(100dvh - 32px);
+    padding: 24px 16px 20px;
+    border-radius: var(--radius-md);
+  }
 }
 
 .modal::before {

@@ -1,19 +1,21 @@
 <template>
   <div v-if="guesses.length" class="guess-grid">
-    <!-- Column header row -->
-    <div class="col-headers">
-      <div class="col-header name-col">{{ t('attributes.name') }}</div>
-      <div v-for="key in attrKeys" :key="key" class="col-header">
-        {{ t(`attributes.${key}`) }}
+    <div class="guess-grid-scroll">
+      <!-- Column header row -->
+      <div class="col-headers">
+        <div class="col-header name-col">{{ t('attributes.name') }}</div>
+        <div v-for="key in attrKeys" :key="key" class="col-header">
+          {{ t(`attributes.${key}`) }}
+        </div>
       </div>
-    </div>
 
-    <GuessRow
-      v-for="guess in [...guesses].reverse()"
-      :key="guess.character.id"
-      :guess="guess"
-      :locale="locale"
-    />
+      <GuessRow
+        v-for="guess in [...guesses].reverse()"
+        :key="guess.character.id"
+        :guess="guess"
+        :locale="locale"
+      />
+    </div>
   </div>
 </template>
 
@@ -45,6 +47,12 @@ const attrKeys = [
 .guess-grid {
   width: 100%;
   margin-top: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.guess-grid-scroll {
+  min-width: 640px;
 }
 
 /* ── Shared column template ──────────────────────────────────────
