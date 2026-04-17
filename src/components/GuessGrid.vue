@@ -91,4 +91,11 @@ const attrKeys = [
   z-index: 3;
   background: var(--color-bg, #FFF6FB);
 }
+
+@media (max-width: 480px) {
+  .col-header{
+    text-align: left;
+  }
+}
+
 </style>

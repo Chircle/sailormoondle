@@ -1,6 +1,6 @@
 <template>
   <div class="hint-cell" :class="result">
-    <span class="label">{{ label }}</span>
+    <!-- <span class="label">{{ label }}</span> -->
     <span class="value">{{ value }}</span>
     <span class="cell-deco" aria-hidden="true">{{ decoMap[result] }}</span>
   </div>

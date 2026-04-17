@@ -19,7 +19,7 @@
         <!-- Trigger button -->
         <button class="lang-trigger" @click="dropdownOpen = !dropdownOpen">
           <span class="flag">{{ flagMap[locale] }}</span>
-          <span class="lang-label">{{ labelMap[locale] }}</span>
+          <!-- <span class="lang-label">{{ labelMap[locale] }}</span> -->
           <span class="chevron" aria-hidden="true">{{ dropdownOpen ? '▲' : '▼' }}</span>
         </button>
 
