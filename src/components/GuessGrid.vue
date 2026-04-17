@@ -95,6 +95,9 @@ const attrKeys = [
 @media (max-width: 480px) {
   .col-header{
     text-align: left;
+    transform: rotate(-25deg);
+    transform-origin: center;
+    margin: 8px 2px;
   }
 }
 
