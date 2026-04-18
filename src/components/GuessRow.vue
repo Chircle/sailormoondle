@@ -18,7 +18,7 @@
         v-for="(hint, key) in guess.hints"
         :key="key"
         :label="t(`attributes.${key}`)"
-        :value="key === 'firstAppearance' ? t(`seasons.${hint.value}`) : hint.value"
+        :value="translateValue(key, hint.value)"
         :result="hint.result"
       />
     </div>
@@ -39,6 +39,16 @@ defineProps<{
 }>()
 
 const { t } = useI18n()
+
+function translateValue(key: string, value: string): string {
+  if (key === 'firstAppearance') return t(`seasons.${value}`)
+  if (key === 'hairColor' || key === 'eyeColor') return t(`colors.${value}`)
+  if (key === 'gender') return t(`genders.${value}`)
+  if (key === 'affiliation') return t(`affiliations.${value}`)
+  if (key === 'role') return t(`roles.${value}`)
+  if (key === 'element') return t(`elements.${value}`)
+  return value
+}
 </script>
 
 <style scoped>

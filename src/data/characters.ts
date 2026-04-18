@@ -144,7 +144,7 @@ export const characters: Character[] = [
     affiliation: 'Silver Millennium',
     role: 'Starlight',
     element: 'Star/Ice',
-    hairColor: 'Blonde',
+    hairColor: 'Silver',
     eyeColor: 'Purple',
     firstAppearance: 'Stars',
     gender: 'Female',

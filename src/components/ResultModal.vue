@@ -30,9 +30,9 @@
           />
           <p class="answer-name">{{ target.names[locale] }}</p>
           <div class="answer-attrs">
-            <span class="attr-chip">{{ target.affiliation }}</span>
-            <span class="attr-chip">{{ target.role }}</span>
-            <span class="attr-chip">{{ target.element }}</span>
+            <span class="attr-chip">{{ t(`affiliations.${target.affiliation}`) }}</span>
+            <span class="attr-chip">{{ t(`roles.${target.role}`) }}</span>
+            <span class="attr-chip">{{ t(`elements.${target.element}`) }}</span>
           </div>
         </div>
 

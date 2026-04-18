@@ -89,7 +89,7 @@ const attrKeys = [
   position: sticky;
   left: 0;
   z-index: 3;
-  background: var(--color-bg, #FFF6FB);
+  /* background: var(--color-bg, #FFF6FB); */
 }
 
 @media (max-width: 480px) {
@@ -98,6 +98,7 @@ const attrKeys = [
     transform: rotate(-25deg);
     transform-origin: center;
     margin: 8px 2px;
+    align-self: end;
   }
 }
 
