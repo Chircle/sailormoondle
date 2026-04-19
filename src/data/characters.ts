@@ -221,7 +221,7 @@ export const characters: Character[] = [
   },
   {
     id: 'queen-metalia',
-    names: { en: 'Queen Metalia', de: 'Metalia', ja: 'クイン・メタリア', fr: 'Reine Metaria', 'pt-BR': 'Rainha Metalia', it: 'Regina Metalia' },
+    names: { en: 'Queen Metalia', de: 'Königin Metalia', ja: 'クイン・メタリア', fr: 'Reine Metaria', 'pt-BR': 'Rainha Metalia', it: 'Regina Metalia' },
     affiliation: 'Dark Kingdom',
     role: 'Villain',
     element: 'Dark Energy',
@@ -243,7 +243,7 @@ export const characters: Character[] = [
   },
   {
     id: 'nephrite',
-    names: { en: 'Nephrite', de: 'Neffyt', ja: 'ネフライト', fr: 'Néphrite', 'pt-BR': 'Nefrite', it: 'Nefrite' },
+    names: { en: 'Nephrite', de: 'Nephlite', ja: 'ネフライト', fr: 'Néphrite', 'pt-BR': 'Nefrite', it: 'Nefrite' },
     affiliation: 'Dark Kingdom',
     role: 'Villain',
     element: 'Dark Energy',
@@ -254,7 +254,7 @@ export const characters: Character[] = [
   },
   {
     id: 'zoisite',
-    names: { en: 'Zoisite', de: 'Zoisit', ja: 'ゾイサイト', fr: 'Zoisite', 'pt-BR': 'Zoisita', it: 'Zoisite' },
+    names: { en: 'Zoisite', de: 'Zoisite', ja: 'ゾイサイト', fr: 'Zoisite', 'pt-BR': 'Zoisita', it: 'Zoisite' },
     affiliation: 'Dark Kingdom',
     role: 'Villain',
     element: 'Dark Energy',
@@ -265,7 +265,7 @@ export const characters: Character[] = [
   },
   {
     id: 'kunzite',
-    names: { en: 'Kunzite', de: 'Kunzit', ja: 'クンザイト', fr: 'Kunzite', 'pt-BR': 'Kunzita', it: 'Kunzite' },
+    names: { en: 'Kunzite', de: 'Kunzite', ja: 'クンザイト', fr: 'Kunzite', 'pt-BR': 'Kunzita', it: 'Kunzite' },
     affiliation: 'Dark Kingdom',
     role: 'Villain',
     element: 'Dark Energy',
@@ -289,7 +289,7 @@ export const characters: Character[] = [
   },
   {
     id: 'prince-demande',
-    names: { en: 'Prince Demande', de: 'Prinz Demand', ja: 'プリンス・デマンド', fr: 'Prince Demand', 'pt-BR': 'Príncipe Demand', it: 'Principe Demande' },
+    names: { en: 'Prince Demande', de: 'Prinz Demande', ja: 'プリンス・デマンド', fr: 'Prince Demand', 'pt-BR': 'Príncipe Demand', it: 'Principe Demande' },
     affiliation: 'Black Moon',
     role: 'Villain',
     element: 'Dark Energy',
@@ -421,6 +421,17 @@ export const characters: Character[] = [
     firstAppearance: 'S',
     gender: 'Female',
   },
+  {
+    id: 'petilol',
+    names: { en: 'Petilol', de: 'Petilol', ja: 'ペティロル', fr: 'Petilol', 'pt-BR': 'Petilol', it: 'Petilol' },
+    affiliation: 'Death Busters',
+    role: 'Villain',
+    element: 'Dark Magic',
+    hairColor: 'Red',
+    eyeColor: 'Red',
+    firstAppearance: 'S',
+    gender: 'Female',
+  },
 
   // ── DEAD MOON CIRCUS ──────────────────────────────────────────────────────
   {
@@ -447,7 +458,7 @@ export const characters: Character[] = [
   },
   {
     id: 'tiger-eye',
-    names: { en: "Tiger's Eye", de: "Tiger's Eye", ja: 'タイガーアイ', fr: "Tiger's Eye", 'pt-BR': 'Tiger Eye', it: "Tiger's Eye" },
+    names: { en: "Tiger's Eye", de: "Tigerauge", ja: 'タイガーアイ', fr: "Tiger's Eye", 'pt-BR': 'Tiger Eye', it: "Tiger's Eye" },
     affiliation: 'Dead Moon',
     role: 'Villain',
     element: 'Dark Energy',
@@ -458,18 +469,18 @@ export const characters: Character[] = [
   },
   {
     id: 'hawks-eye',
-    names: { en: "Hawk's Eye", de: "Hawk's Eye", ja: 'ホークスアイ', fr: "Hawk's Eye", 'pt-BR': 'Hawk Eye', it: "Hawk's Eye" },
+    names: { en: "Hawk's Eye", de: "Falkenauge", ja: 'ホークスアイ', fr: "Hawk's Eye", 'pt-BR': 'Hawk Eye', it: "Hawk's Eye" },
     affiliation: 'Dead Moon',
     role: 'Villain',
     element: 'Dark Energy',
-    hairColor: 'Red',
+    hairColor: 'Pink',
     eyeColor: 'Red',
     firstAppearance: 'SuperS',
     gender: 'Male',
   },
   {
     id: 'fisheye',
-    names: { en: "Fish Eye", de: "Fish Eye", ja: 'フィッシュアイ', fr: "Fish Eye", 'pt-BR': 'Fish Eye', it: "Fish Eye" },
+    names: { en: "Fish Eye", de: "Fischauge", ja: 'フィッシュアイ', fr: "Fish Eye", 'pt-BR': 'Fish Eye', it: "Fish Eye" },
     affiliation: 'Dead Moon',
     role: 'Villain',
     element: 'Dark Energy',

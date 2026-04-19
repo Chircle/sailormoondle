@@ -2,7 +2,7 @@ import { characters } from '../data/characters'
 import type { Character } from '../types/character'
 
 const MS_PER_DAY = 86_400_000
-const EPOCH = new Date('2024-01-01').getTime()
+const EPOCH = new Date('2026-04-02').getTime()
 
 export function getDayIndex(): number {
   return Math.floor((Date.now() - EPOCH) / MS_PER_DAY)
