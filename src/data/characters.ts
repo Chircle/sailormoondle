@@ -202,7 +202,7 @@ export const characters: Character[] = [
     role: 'Ally',
     element: 'Moon/Future',
     hairColor: 'Grey',
-    eyeColor: 'Purple',
+    eyeColor: 'Pink',
     firstAppearance: 'S',
     gender: 'Female',
   },
